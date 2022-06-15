@@ -30,27 +30,21 @@ h4 {
 }
 
 img {
-  display: block;
-  margin: auto;
+width: 100%;
 }
-.squareimg{
+/* .squareimg{
   display: none;
-}
+} */
 
 
 @media (min-width: 960px) {
   .header {
     grid-template-columns: repeat(2, 1fr);
   }
-  .landscape {
-    display: none;
-  }
-  .squareimg {
-    display: block;
-    float: right;
-  }
-  .clearfix::after{
-    clear: both;
-    content: "";
-  }
-}
+  picture {
+    display: flex;
+    flex-direction: column-reverse;
+    } 
+}    
+  
+
